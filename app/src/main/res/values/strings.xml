@@ -6,4 +6,27 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_grievances">Driver Grievances</string>
+    <string name="large_text">
+        "<u>Grievances from Passengers.</u>\n\n"
+
+        "<b>Grievance 1 [16/03/2017]:\n\n</b>"
+        "Driving above speed limit "
+        "You were also reported to have been intoxicated"
+        "Therefore we will lodge investigation.\n"
+
+
+        "<b>Grievance 2 [20/03/2017]:\n\n</b>"
+        "Negligent Driving"
+        "which includes driving above speed limit.\n"
+
+        "<b>Grievance 3 [20/03/2017]:\n\n</b>"
+        "Driving above speed limit"
+        "And driving under the influence.\n"
+
+
+        "<b>Grievance 4 [20/03/2017]:\n\n</b>"
+        "Negligent Driving.\n\n"
+
+    </string>
 </resources>

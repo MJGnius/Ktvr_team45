@@ -28,8 +28,8 @@ public class DriverProfile extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+               Intent i = new Intent(DriverProfile.this, MessageAdmin.class);
+                startActivity(i);
             }
         });
 
@@ -68,9 +68,7 @@ public class DriverProfile extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }
@@ -80,24 +78,21 @@ public class DriverProfile extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        switch (id){
+        switch (id) {
             case R.id.nav_BusCode:
                 Intent i = new Intent(DriverProfile.this,BusCodeActivity.class);
                 startActivity(i);
                 break;
             case R.id.nav_Grievances:
-                i = new Intent(DriverProfile.this,GrievanceActivity.class);
+                i = new Intent(DriverProfile.this,Grievances.class);
                 startActivity(i);
                 break;
             case R.id.nav_Scan:
                 i = new Intent(DriverProfile.this, ScanActivity.class);
                 startActivity(i);
                 break;
+
         }
-
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
